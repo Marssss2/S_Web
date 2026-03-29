@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore the full menu at MarD Brew Co. — specialty coffees, teas, pastries, and more." />
+  <title>Menu | MarD Brew Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">MarD <span>Brew</span> Co.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="page-hero" role="banner">
+    <img class="page-hero-img"
+      src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1400&q=80&fit=crop"
+      alt="Overhead view of various coffee drinks on a café table"
+    />
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <span class="section-label">What We Serve</span>
+      <h1>The Menu</h1>
+      <p style="color:var(--clr-muted);max-width:420px;margin:1rem auto 0;">
+        Seasonal ingredients. Ethical sourcing. Drinks we're genuinely proud of.
+      </p>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Drinks Showcase with Images -->
+    <section class="section section-white" aria-labelledby="drinks-visual-heading">
+      <div class="container">
+        <span class="section-label">Our Bestsellers</span>
+        <h2 class="section-title" id="drinks-visual-heading">Must-Try Drinks</h2>
+        <div class="divider"></div>
+        <div class="menu-cards">
+
+          <article class="menu-card hover-lift animate-fade-up delay-1">
+            <div class="menu-card-img-wrap">
+              <img class="menu-card-img"
+                src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=600&q=80&fit=crop"
+                alt="Black Ember Espresso in ceramic cup" loading="lazy" />
+              <span class="menu-card-tag">Signature</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Black Ember Espresso</h3>
+              <p>Double ristretto, chocolate and smoky finish. Our most ordered drink.</p>
+              <div class="menu-card-footer"><span class="menu-price">₱90 – ₱120</span></div>
+            </div>
+          </article>
+
+          <article class="menu-card hover-lift animate-fade-up delay-2">
+            <div class="menu-card-img-wrap">
+              <img class="menu-card-img"
+                src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=600&q=80&fit=crop"
+                alt="Flat white with latte art swirl in a white ceramic cup" loading="lazy" />
+              <span class="menu-card-tag">Fan Fave</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Flat White</h3>
+              <p>Ristretto with velvety steamed whole milk and a delicate latte art pour.</p>
+              <div class="menu-card-footer"><span class="menu-price">₱155</span></div>
+            </div>
+          </article>
+
+          <article class="menu-card hover-lift animate-fade-up delay-3">
+            <div class="menu-card-img-wrap">
+              <img class="menu-card-img"
+                src="https://images.unsplash.com/photo-1582192730841-2a682d7375f9?w=600&q=80&fit=crop"
+                alt="Vibrant green iced matcha latte with oat milk" loading="lazy" />
+              <span class="menu-card-tag">New</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Iced Matcha Latte</h3>
+              <p>Ceremonial matcha, oat milk, poured over ice. Calm in a glass.</p>
+              <div class="menu-card-footer"><span class="menu-price">₱165</span></div>
+            </div>
+          </article>
+
+          <article class="menu-card hover-lift animate-fade-up delay-4">
+            <div class="menu-card-img-wrap">
+              <img class="menu-card-img"
+                src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&fit=crop"
+                alt="Salted Caramel Cold Brew in a glass with oat milk foam" loading="lazy" />
+              <span class="menu-card-tag">Signature</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Salted Caramel Cloud</h3>
+              <p>18-hour cold brew, house caramel, oat milk foam, Himalayan salt.</p>
+              <div class="menu-card-footer"><span class="menu-price">₱185</span></div>
+            </div>
+          </article>
+
+          <article class="menu-card hover-lift">
+            <div class="menu-card-img-wrap">
+              <img class="menu-card-img"
+                src="https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=600&q=80&fit=crop"
+                alt="Iced ube latte — vibrant purple Filipino purple yam drink" loading="lazy" />
+              <span class="menu-card-tag">Hot Pick</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Ube Latte</h3>
+              <p>Local ube halaya, espresso, steamed milk. A Filipino classic, reimagined.</p>
+              <div class="menu-card-footer"><span class="menu-price">₱175</span></div>
+            </div>
+          </article>
+
+          <article class="menu-card hover-lift">
+            <div class="menu-card-img-wrap">
+              <img class="menu-card-img"
+                src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=600&q=80&fit=crop"
+                alt="Honey oat latte with a drizzle of golden honey" loading="lazy" />
+              <span class="menu-card-tag">New</span>
+            </div>
+            <div class="menu-card-body">
+              <h3>Honey Oat Latte</h3>
+              <p>Espresso, oat milk, and local wild honey — warm and naturally sweet.</p>
+              <div class="menu-card-footer"><span class="menu-price">₱150 – ₱170</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Full Menu Tables -->
+    <section class="section section-alt" aria-labelledby="full-menu-heading">
+      <div class="container">
+        <span class="section-label">Full Listing</span>
+        <h2 class="section-title" id="full-menu-heading">Complete Menu &amp; Pricing</h2>
+        <div class="divider"></div>
+
+        <!-- Hot Drinks Table -->
+        <h3 style="font-family:var(--font-body);font-size:1rem;font-weight:600;color:var(--clr-matcha);margin-bottom:0.5rem;">☕ Hot Drinks</h3>
+        <div class="menu-table-wrap">
+          <table class="menu-table" aria-label="Hot drinks menu">
+            <thead>
+              <tr>
+                <th scope="col">Drink</th>
+                <th scope="col">Description</th>
+                <th scope="col">Size</th>
+                <th scope="col">Price (₱)</th>
+                <th scope="col">Tag</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Black Ember Espresso</strong></td><td>Double ristretto, chocolate and smoky finish</td><td>Solo / Doppio</td><td>₱90 / ₱120</td><td><span class="badge badge-fave">Signature</span></td></tr>
+              <tr><td><strong>Classic Americano</strong></td><td>Espresso shots pulled over hot water</td><td>Tall / Grande</td><td>₱100 / ₱120</td><td></td></tr>
+              <tr><td><strong>Flat White</strong></td><td>Ristretto with velvety steamed whole milk</td><td>Standard</td><td>₱155</td><td><span class="badge badge-fave">Fave</span></td></tr>
+              <tr><td><strong>Honey Oat Latte</strong></td><td>Espresso, oat milk, local wild honey</td><td>Tall / Grande</td><td>₱150 / ₱170</td><td><span class="badge badge-new">New</span></td></tr>
+              <tr><td><strong>Dirty Matcha</strong></td><td>Ceremonial matcha with espresso shot on top</td><td>Standard</td><td>₱165</td><td><span class="badge badge-hot">Hot Pick</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Cold Drinks Table -->
+        <h3 style="font-family:var(--font-body);font-size:1rem;font-weight:600;color:var(--clr-matcha);margin:2.5rem 0 0.5rem;">🧊 Cold Drinks</h3>
+        <div class="menu-table-wrap">
+          <table class="menu-table" aria-label="Cold drinks menu">
+            <thead>
+              <tr>
+                <th scope="col">Drink</th>
+                <th scope="col">Description</th>
+                <th scope="col">Size</th>
+                <th scope="col">Price (₱)</th>
+                <th scope="col">Tag</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Salted Caramel Cloud</strong></td><td>Cold brew, caramel, oat milk foam, Himalayan salt</td><td>Grande</td><td>₱185</td><td><span class="badge badge-fave">Signature</span></td></tr>
+              <tr><td><strong>Ube Latte</strong></td><td>Ube halaya, espresso, steamed milk over ice</td><td>Grande</td><td>₱175</td><td><span class="badge badge-hot">Hot Pick</span></td></tr>
+              <tr><td><strong>Iced Matcha Latte</strong></td><td>Ceremonial matcha, oat milk, over ice</td><td>Grande</td><td>₱165</td><td><span class="badge badge-new">New</span></td></tr>
+              <tr><td><strong>Classic Cold Brew</strong></td><td>18-hour steeped Benguet beans, served black</td><td>Tall / Grande</td><td>₱130 / ₱155</td><td></td></tr>
+              <tr><td><strong>Brown Sugar Shaken Espresso</strong></td><td>Hand-shaken espresso with brown sugar syrup</td><td>Grande</td><td>₱165</td><td><span class="badge badge-new">New</span></td></tr>
+              <tr><td><strong>Calamansi Tonic</strong></td><td>Espresso, tonic water, fresh calamansi, mint</td><td>Grande</td><td>₱155</td><td><span class="badge badge-new">New</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Pastries Table -->
+        <h3 style="font-family:var(--font-body);font-size:1rem;font-weight:600;color:var(--clr-matcha);margin:2.5rem 0 0.5rem;">🥐 Food &amp; Pastries</h3>
+        <div class="menu-table-wrap">
+          <table class="menu-table" aria-label="Food and pastry menu">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Description</th>
+                <th scope="col">Price (₱)</th>
+                <th scope="col">Dietary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Burnt Basque Cheesecake</strong></td><td>Creamy, caramelized top, served with berry compote</td><td>₱120 / slice</td><td>Vegetarian</td></tr>
+              <tr><td><strong>Croissant au Beurre</strong></td><td>Laminated butter croissant, baked every morning</td><td>₱85</td><td>Vegetarian</td></tr>
+              <tr><td><strong>Avocado Toast</strong></td><td>Sourdough, smashed avo, chili flakes, lemon</td><td>₱145</td><td>Vegan</td></tr>
+              <tr><td><strong>Ensaymada Brioche</strong></td><td>Local-style soft brioche with butter and cheese</td><td>₱75</td><td>Vegetarian</td></tr>
+              <tr><td><strong>Granola Bowl</strong></td><td>House granola, coconut yogurt, seasonal fruit</td><td>₱165</td><td>Vegan</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p style="font-size:0.8rem;color:var(--clr-muted);margin-top:1.5rem;">
+          * Prices are inclusive of VAT. Items may vary by season. Please inform our staff of any allergies.
+        </p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-logo">MarD <span>Brew</span> Co.</p>
+          <p class="footer-desc">MarD Brew Co. — craft coffee, community, and the perfect cup.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li><a href="#">Mon–Fri: 7am – 9pm</a></li>
+            <li><a href="#">Sat: 8am – 10pm</a></li>
+            <li><a href="#">Sun: 9am – 8pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MarD Brew Co. All rights reserved.</p>
+        <p>WEB 224 Midterm Project</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
