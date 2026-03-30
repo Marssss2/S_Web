@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gallery — take a peek inside MarD Brew Co. Our space, our drinks, our people." />
+  <title>Gallery | MarD Brew Co.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">MarD <span>Brew</span> Co.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <label for="navToggle" class="nav-toggle-label" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </nav>
+
+  <input type="checkbox" id="navToggle" class="nav-toggle" />
+  <div class="mobile-nav-drawer">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html"class='active'>Gallery</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <label for="navToggle" class="mobile-nav-overlay"></label>
+
+  <header class="page-hero" role="banner">
+    <img class="page-hero-img"
+      src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1400&q=80&fit=crop"
+      alt="Overhead café flat lay with coffee and pastries"
+    />
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <span class="section-label">A Visual Tour</span>
+      <h1>Our Gallery</h1>
+      <p style="color:var(--clr-muted);max-width:420px;margin:1rem auto 0;">
+        From our space to our drinks — here's what MarD Brew Co. looks and feels like.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section class="section section-white" aria-labelledby="gallery-heading">
+      <div class="container">
+        <span class="section-label">Browse by Category</span>
+        <h2 class="section-title" id="gallery-heading">Everything MarD</h2>
+        <div class="divider"></div>
+
+        <!-- Filter Buttons -->
+        <div class="gallery-filter" role="group" aria-label="Filter gallery by category">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="drinks">Drinks</button>
+          <button class="filter-btn" data-filter="food">Food</button>
+          <button class="filter-btn" data-filter="space">The Space</button>
+          <button class="filter-btn" data-filter="people">People</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+          <a href="#lb1" class="gallery-item" data-category="drinks" aria-label="View Espresso photo">
+            <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=800&q=90&fit=crop" alt="Black Ember Espresso in ceramic cup" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Espresso</span></div>
+          </a>
+
+          <a href="#lb2" class="gallery-item" data-category="space" aria-label="View Our Space photo">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=90&fit=crop" alt="Cozy café interior with warm lighting" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Our Space</span></div>
+          </a>
+
+          <a href="#lb3" class="gallery-item" data-category="food" aria-label="View Croissant photo">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=90&fit=crop" alt="Golden butter croissant" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Croissant</span></div>
+          </a>
+
+          <a href="#lb4" class="gallery-item" data-category="drinks" aria-label="View Matcha Latte photo">
+            <img src="https://images.unsplash.com/photo-1582192730841-2a682d7375f9?w=800&q=90&fit=crop" alt="Iced matcha latte in a glass" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Matcha Latte</span></div>
+          </a>
+
+          <a href="#lb5" class="gallery-item" data-category="people" aria-label="View Our Barista photo">
+            <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=90&fit=crop" alt="Barista crafting a drink" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Our Barista</span></div>
+          </a>
+
+          <a href="#lb6" class="gallery-item" data-category="food" aria-label="View Basque Cheesecake photo">
+            <img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=800&q=90&fit=crop" alt="Basque burnt cheesecake slice" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Basque Cheesecake</span></div>
+          </a>
+
+          <a href="#lb7" class="gallery-item" data-category="drinks" aria-label="View Cold Brew photo">
+            <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=90&fit=crop" alt="Salted caramel cold brew" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Cold Brew</span></div>
+          </a>
+
+          <a href="#lb8" class="gallery-item" data-category="space" aria-label="View The Vibe photo">
+            <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=90&fit=crop" alt="Café table with coffee and plant" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">The Vibe</span></div>
+          </a>
+
+          <a href="#lb9" class="gallery-item" data-category="food" aria-label="View Avocado Toast photo">
+            <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=90&fit=crop" alt="Avocado toast on sourdough" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Avocado Toast</span></div>
+          </a>
+
+          <a href="#lb10" class="gallery-item" data-category="drinks" aria-label="View Flat White photo">
+            <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=800&q=90&fit=crop" alt="Flat white with latte art" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Flat White</span></div>
+          </a>
+
+          <a href="#lb11" class="gallery-item" data-category="space" aria-label="View Sunny Corner photo">
+            <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&q=90&fit=crop" alt="Sunny café corner with plants" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">Sunny Corner</span></div>
+          </a>
+
+          <a href="#lb12" class="gallery-item" data-category="people" aria-label="View The Team photo">
+            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=90&fit=crop" alt="Café team at work" loading="lazy" />
+            <div class="gallery-item-overlay"><span class="gallery-item-label">The Team</span></div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- CSS-only Lightboxes using :target -->
+  <div id="lb1" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=800&q=90&fit=crop" alt="Black Ember Espresso in ceramic cup" />
+    <span class="lightbox-caption">Espresso</span>
+  </div>
+  <div id="lb2" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&q=90&fit=crop" alt="Cozy café interior with warm lighting" />
+    <span class="lightbox-caption">Our Space</span>
+  </div>
+  <div id="lb3" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=800&q=90&fit=crop" alt="Golden butter croissant" />
+    <span class="lightbox-caption">Croissant</span>
+  </div>
+  <div id="lb4" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1582192730841-2a682d7375f9?w=800&q=90&fit=crop" alt="Iced matcha latte in a glass" />
+    <span class="lightbox-caption">Matcha Latte</span>
+  </div>
+  <div id="lb5" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?w=800&q=90&fit=crop" alt="Barista crafting a drink" />
+    <span class="lightbox-caption">Our Barista</span>
+  </div>
+  <div id="lb6" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=800&q=90&fit=crop" alt="Basque burnt cheesecake slice" />
+    <span class="lightbox-caption">Basque Cheesecake</span>
+  </div>
+  <div id="lb7" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=800&q=90&fit=crop" alt="Salted caramel cold brew" />
+    <span class="lightbox-caption">Cold Brew</span>
+  </div>
+  <div id="lb8" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&q=90&fit=crop" alt="Café table with coffee and plant" />
+    <span class="lightbox-caption">The Vibe</span>
+  </div>
+  <div id="lb9" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=800&q=90&fit=crop" alt="Avocado toast on sourdough" />
+    <span class="lightbox-caption">Avocado Toast</span>
+  </div>
+  <div id="lb10" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1578314675249-a6910f80cc4e?w=800&q=90&fit=crop" alt="Flat white with latte art" />
+    <span class="lightbox-caption">Flat White</span>
+  </div>
+  <div id="lb11" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1453614512568-c4024d13c247?w=800&q=90&fit=crop" alt="Sunny café corner with plants" />
+    <span class="lightbox-caption">Sunny Corner</span>
+  </div>
+  <div id="lb12" class="lightbox-overlay">
+    <a href="#" class="lightbox-close" aria-label="Close">✕</a>
+    <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=800&q=90&fit=crop" alt="Café team at work" />
+    <span class="lightbox-caption">The Team</span>
+  </div>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-logo">MarD <span>Brew</span> Co.</p>
+          <p class="footer-desc">MarD Brew Co. — craft coffee, community, and the perfect cup.</p>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li><a href="#">Mon–Fri: 7am – 9pm</a></li>
+            <li><a href="#">Sat: 8am – 10pm</a></li>
+            <li><a href="#">Sun: 9am – 8pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MarD Brew Co. All rights reserved.</p>
+        <p>WEB 224 Midterm Project</p>
+      </div>
+    </div>
+  </footer>
+
+  
+
+  <!-- Page transition overlay -->
+  
+  <a href="contact.html" class="float-order" aria-label="Order Now">☕ <span class="order-label">Order Now</span></a>
+
+  
+</body>
+</html>

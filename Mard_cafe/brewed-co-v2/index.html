@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MarD Brew Co. — A quiet corner for great coffee and good company in Pampanga." />
+  <title>MarD Brew Co. | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,600&family=DM+Sans:wght@300;400;500&family=DM+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  
+</head>
+<body>
+
+  <!-- ===== LOADING SCREEN ===== --><!-- ===== PROMO BANNER ===== -->
+    <!-- CSS-only Loading Screen -->
+  <div id="loader">
+    <p class="loader-logo">MarD <span>Brew</span> Co.</p>
+    <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    <p class="loader-tagline">Brewing something good...</p>
+  </div>
+
+<div class="promo-banner" id="promoBanner" role="banner">
+    ☕ &nbsp;<strong>Buy 2, Get 1 Free</strong> every Saturday morning — dine-in only. &nbsp;
+    <a href="menu.html">See Menu →</a>
+    <button class="promo-close" onclick="this.parentElement.style.display='none'" aria-label="Close promo banner">✕</button>
+  </div>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">MarD <span>Brew</span> Co.</a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <label for="navToggle" class="nav-toggle-label" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </label>
+    </div>
+  </nav>
+
+  <!-- CSS-only mobile nav drawer -->
+  <input type="checkbox" id="navToggle" class="nav-toggle" />
+  <div class="mobile-nav-drawer">
+    <a href="index.html" class="active">Home</a>
+    <a href="about.html">About</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <label for="navToggle" class="mobile-nav-overlay"></label>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Hero banner">
+    <div class="hero-left">
+      <p class="hero-eyebrow">Est. 2019 — Pampanga</p>
+      <h1>Where Every Cup Tells <em>a Story</em></h1>
+      <p class="hero-desc">
+        A quiet corner for great coffee and good company. We source ethically, 
+        brew carefully, and serve with intention.
+      </p>
+      <div class="hero-cta">
+        <a href="menu.html" class="btn btn-filled">View Our Menu</a>
+        <a href="about.html" class="btn">Our Story</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=900&q=80&fit=crop"
+        alt="Cozy café interior with warm lighting and coffee on a wooden table"
+        loading="eager"
+      />
+      <div class="hero-badge">
+        <p>Specialty Coffee</p>
+        <strong>250+ Cups Daily</strong>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY CHOOSE US ===== -->
+  <section class="section section-white" aria-labelledby="features-heading">
+    <div class="container">
+      <span class="section-label">Why Choose Us</span>
+      <h2 class="section-title" id="features-heading">Crafted with Care</h2>
+      <div class="divider"></div>
+      <div class="features-grid">
+        <article class="feature-card animate-fade-up delay-1">
+          <div class="feature-icon" aria-hidden="true">🌿</div>
+          <h3>Single-Origin Beans</h3>
+          <p>Sourced from Philippine highlands and partner farms across Southeast Asia.</p>
+        </article>
+        <article class="feature-card animate-fade-up delay-2">
+          <div class="feature-icon" aria-hidden="true">♻️</div>
+          <h3>Organic &amp; Sustainable</h3>
+          <p>Eco-friendly packaging, zero-waste kitchen, and compostable cups throughout.</p>
+        </article>
+        <article class="feature-card animate-fade-up delay-3">
+          <div class="feature-icon" aria-hidden="true">🎵</div>
+          <h3>The Right Atmosphere</h3>
+          <p>Curated music, soft lighting, and cozy seating for work or conversation.</p>
+        </article>
+        <article class="feature-card animate-fade-up delay-4">
+          <div class="feature-icon" aria-hidden="true">🏆</div>
+          <h3>Award-Winning Baristas</h3>
+          <p>Our team trains year-round and competes nationally to bring you the best cup.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIGNATURE DRINKS ===== -->
+  <section class="section section-alt" aria-labelledby="signatures-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Today's Picks</span>
+        <h2 class="section-title" id="signatures-heading">Our Signature Drinks</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="menu-cards">
+
+        <article class="menu-card hover-lift animate-fade-up delay-1">
+          <div class="menu-card-img-wrap">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1510707577719-ae7c14805e3a?w=600&q=80&fit=crop"
+              alt="Black Ember Espresso — dark rich double shot in a ceramic cup" loading="lazy" />
+            <span class="menu-card-tag">Signature</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Black Ember Espresso</h3>
+            <p>Double ristretto with deep chocolate notes and a smooth, smoky finish.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">₱120</span>
+              <a href="menu.html" class="btn" style="padding:0.45rem 1.1rem;font-size:0.8rem;">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card hover-lift animate-fade-up delay-2">
+          <div class="menu-card-img-wrap">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&q=80&fit=crop"
+              alt="Salted Caramel Cold Brew in a tall glass with oat milk foam" loading="lazy" />
+            <span class="menu-card-tag">Fan Fave</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Salted Caramel Cloud</h3>
+            <p>Cold brew with house caramel, oat milk foam, and Himalayan salt.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">₱185</span>
+              <a href="menu.html" class="btn" style="padding:0.45rem 1.1rem;font-size:0.8rem;">View</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="menu-card hover-lift animate-fade-up delay-3">
+          <div class="menu-card-img-wrap">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1582192730841-2a682d7375f9?w=600&q=80&fit=crop"
+              alt="Iced matcha latte with milk swirling into vibrant green matcha" loading="lazy" />
+            <span class="menu-card-tag">New</span>
+          </div>
+          <div class="menu-card-body">
+            <h3>Iced Matcha Latte</h3>
+            <p>Ceremonial-grade matcha whisked smooth, poured over ice with oat milk.</p>
+            <div class="menu-card-footer">
+              <span class="menu-price">₱165</span>
+              <a href="menu.html" class="btn" style="padding:0.45rem 1.1rem;font-size:0.8rem;">View</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="text-center" style="margin-top:2.5rem;">
+        <a href="menu.html" class="btn btn-filled">See Full Menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOD PREVIEW ===== -->
+  <section class="section section-white" aria-labelledby="food-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">Baked Fresh Daily</span>
+        <h2 class="section-title" id="food-heading">Pair It with Something Good</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="menu-cards">
+
+        <article class="menu-card hover-lift">
+          <div class="menu-card-img-wrap">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80&fit=crop"
+              alt="Golden flaky butter croissant on a white plate" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>Croissant au Beurre</h3>
+            <p>Laminated butter croissant, baked every morning until golden and flaky.</p>
+            <div class="menu-card-footer"><span class="menu-price">₱85</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card hover-lift">
+          <div class="menu-card-img-wrap">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?w=600&q=80&fit=crop"
+              alt="Avocado toast on sourdough with chili flakes and lemon" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>Avocado Toast</h3>
+            <p>Sourdough, smashed avo, chili flakes, fresh lemon. Vegan-friendly.</p>
+            <div class="menu-card-footer"><span class="menu-price">₱145</span></div>
+          </div>
+        </article>
+
+        <article class="menu-card hover-lift">
+          <div class="menu-card-img-wrap">
+            <img class="menu-card-img"
+              src="https://images.unsplash.com/photo-1567171466295-4afa63d45416?w=600&q=80&fit=crop"
+              alt="Slice of creamy Basque burnt cheesecake with caramelized top" loading="lazy" />
+          </div>
+          <div class="menu-card-body">
+            <h3>Basque Cheesecake</h3>
+            <p>Creamy, perfectly burnt top, served with seasonal berry compote.</p>
+            <div class="menu-card-footer"><span class="menu-price">₱120 / slice</span></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section section-alt" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-label">What People Say</span>
+        <h2 class="section-title" id="reviews-heading">Customer Reviews</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="testimonials-grid">
+
+        <article class="testimonial-card animate-fade-up delay-1">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">The Iced Matcha Latte here is hands down the best in Pampanga. Sobrang creamy at hindi sobrang tamis. I drive 20 minutes just for this.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🧑</div>
+            <div>
+              <span class="testimonial-name">Renz Villanueva</span>
+              <span class="testimonial-loc">Angeles City</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card animate-fade-up delay-2">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Super cozy yung place, perfect for studying. The Salted Caramel Cloud is my thesis defense fuel. Walang kapantay yung ambiance nila.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👩</div>
+            <div>
+              <span class="testimonial-name">Trisha Mae Santos</span>
+              <span class="testimonial-loc">Sto. Tomas, Pampanga</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card animate-fade-up delay-3">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Used their catering for our company event — professional, on time, and the coffee was excellent. Maraming guests ang nagtatanong kung saan galing yung coffee.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👨‍💼</div>
+            <div>
+              <span class="testimonial-name">Carlo Reyes</span>
+              <span class="testimonial-loc">San Fernando, Pampanga</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card animate-fade-up delay-4">
+          <div class="stars">★★★★★</div>
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Yung Ube Latte nila is literal comfort in a cup. Authentic Filipino flavors pero elevated. Babalik-balik ako dito forever.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👩‍🎓</div>
+            <div>
+              <span class="testimonial-name">Janna Cruz</span>
+              <span class="testimonial-loc">Mabalacat, Pampanga</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section section-white" aria-labelledby="faq-heading">
+    <div class="container" style="max-width: 720px;">
+      <div class="text-center">
+        <span class="section-label">Got Questions?</span>
+        <h2 class="section-title" id="faq-heading">Frequently Asked Questions</h2>
+        <div class="divider mx-auto"></div>
+      </div>
+      <div class="faq-list">
+
+        <details class="faq-item">
+          <summary class="faq-question">Do you have non-coffee options?<span class="faq-icon">+</span></summary>
+          <div class="faq-answer"><p>Yes! We have matcha lattes, fruit teas, calamansi tonic, and a rotating seasonal non-coffee drink every month. We also have oat milk and plant-based options for all drinks.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Do you accept reservations?<span class="faq-icon">+</span></summary>
+          <div class="faq-answer"><p>We accept reservations for groups of 6 or more. For smaller groups, it's walk-in only. You can submit a reservation request through our <a href="contact.html" style="color:#6b8f5e;">Contact page</a>.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Is there Wi-Fi available?<span class="faq-icon">+</span></summary>
+          <div class="faq-answer"><p>Yes, free Wi-Fi is available for all dine-in customers. Just ask any staff member for the password. We also have charging outlets at most tables.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Can I bring my laptop and work here?<span class="faq-icon">+</span></summary>
+          <div class="faq-answer"><p>Absolutely! MarD Brew Co. is designed to be a great work and study space. We have quiet zones, power outlets, and the right atmosphere to keep you focused.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Do you offer loyalty rewards?<span class="faq-icon">+</span></summary>
+          <div class="faq-answer"><p>Yes! Every 10th cup is on us. Just ask for a loyalty card at the counter. We also have a monthly subscription box for coffee lovers — check our <a href="services.html" style="color:#6b8f5e;">Services page</a>.</p></div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">Where exactly are you located?<span class="faq-icon">+</span></summary>
+          <div class="faq-answer"><p>We're at 123 Mabini Street, Sto. Tomas, Pampanga — near the main road, beside the community park. Parking is available out front.</p></div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOYALTY CARD ===== -->
+  <section class="loyalty-section" aria-labelledby="loyalty-heading">
+    <div class="container">
+      <div class="loyalty-inner">
+
+        <!-- Visual card -->
+        <div class="reveal-left">
+          <div class="loyalty-card">
+            <div class="loyalty-card-header">
+              <div>
+                <div class="loyalty-card-title">MarD <span>Brew</span> Co.</div>
+                <div class="loyalty-card-sub">Loyalty Rewards Card</div>
+              </div>
+              <div style="font-size:1.8rem;">☕</div>
+            </div>
+            <p class="loyalty-stamp-name">Every cup counts — 7 stamps = 1 FREE drink</p>
+            <div class="loyalty-stamps" role="list" aria-label="Stamp progress">
+              <div class="stamp filled" role="listitem" aria-label="Stamp 1 earned">☕</div>
+              <div class="stamp filled" role="listitem" aria-label="Stamp 2 earned">☕</div>
+              <div class="stamp filled" role="listitem" aria-label="Stamp 3 earned">☕</div>
+              <div class="stamp filled" role="listitem" aria-label="Stamp 4 earned">☕</div>
+              <div class="stamp filled" role="listitem" aria-label="Stamp 5 earned">☕</div>
+              <div class="stamp" role="listitem" aria-label="Stamp 6 not yet earned"></div>
+              <div class="stamp" role="listitem" aria-label="Stamp 7 not yet earned"></div>
+              <div class="stamp" role="listitem" aria-label="Stamp 8 not yet earned"></div>
+              <div class="stamp" role="listitem" aria-label="Stamp 9 not yet earned"></div>
+              <div class="stamp free" role="listitem" aria-label="Stamp 10 - free drink">FREE<br>DRINK</div>
+            </div>
+            <div class="loyalty-progress">
+              <p>Progress: 5 of 9 stamps collected</p>
+              <div class="loyalty-progress-bar" aria-label="55% complete">
+                <div class="loyalty-progress-fill" style="width:55%;"></div>
+              </div>
+            </div>
+            <div class="loyalty-card-footer">
+              <p>Member since 2024</p>
+              <p>Card No. 00-2024-1138</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Info side -->
+        <div class="loyalty-info reveal-right">
+          <span class="section-label">Regulars Love Us</span>
+          <h2 id="loyalty-heading">Join the MarD Loyalty Program</h2>
+          <p>The more you sip, the more you save. Collect stamps every visit and earn free drinks — no app needed, just your physical card.</p>
+          <div class="loyalty-steps">
+            <div class="loyalty-step">
+              <div class="loyalty-step-num">1</div>
+              <div class="loyalty-step-text">
+                <strong>Get your card</strong>
+                <span>Ask any staff member for a free loyalty card on your first visit.</span>
+              </div>
+            </div>
+            <div class="loyalty-step">
+              <div class="loyalty-step-num">2</div>
+              <div class="loyalty-step-text">
+                <strong>Stamp every cup</strong>
+                <span>Buy any drink and get a stamp. Dine-in or takeout — both count!</span>
+              </div>
+            </div>
+            <div class="loyalty-step">
+              <div class="loyalty-step-num">3</div>
+              <div class="loyalty-step-text">
+                <strong>Claim your free drink</strong>
+                <span>Complete 9 stamps and your 10th cup is on us. Any drink, any size.</span>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html" class="btn btn-filled" style="margin-top:2rem;">Get My Card →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COUNTER SECTION ===== -->
+  <section class="counter-section" aria-label="Business statistics">
+    <div class="container">
+      <div class="counter-grid">
+        <div class="counter-item reveal">
+          <strong><span class="counter" data-target="250">0</span>+</strong>
+          <span>Cups per Day</span>
+        </div>
+        <div class="counter-item reveal reveal-delay-1">
+          <strong><span class="counter" data-target="6">0</span>+</strong>
+          <span>Years Brewing</span>
+        </div>
+        <div class="counter-item reveal reveal-delay-2">
+          <strong><span class="counter" data-target="12">0</span></strong>
+          <span>Team Members</span>
+        </div>
+        <div class="counter-item reveal reveal-delay-3">
+          <strong><span class="counter" data-target="3">0</span></strong>
+          <span>Farm Partners</span>
+        </div>
+        <div class="counter-item reveal reveal-delay-4">
+          <strong><span class="counter" data-target="98">0</span>%</strong>
+          <span>Happy Customers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="newsletter-section" aria-labelledby="newsletter-heading">
+    <div class="container">
+      <div class="newsletter-inner reveal">
+        <span class="section-label" style="color:var(--clr-matcha-lt);">Stay in the Loop</span>
+        <h2 id="newsletter-heading">Get Updates from MarD</h2>
+        <p>New drinks, promos, events — straight to your inbox. No spam, promise.</p>
+        <form class="newsletter-form" id="newsletterForm" novalidate>
+          <input type="email" placeholder="your@email.com" required aria-label="Email address" />
+          <button type="submit">Subscribe ☕</button>
+        </form>
+        <p class="newsletter-success" id="newsletterSuccess">✅ &nbsp; You're subscribed! Welcome to the MarD family.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-logo">MarD <span>Brew</span> Co.</p>
+          <p class="footer-desc">MarD Brew Co. — craft coffee, community, and the perfect cup.</p>
+          <div style="display:flex;gap:0.75rem;margin-top:1rem;">
+            <a href="#" aria-label="Facebook" style="color:rgba(255,255,255,0.4);font-size:1.1rem;transition:color 0.3s;" onmouseover="this.style.color='#a8c499'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">𝐟</a>
+            <a href="#" aria-label="Instagram" style="color:rgba(255,255,255,0.4);font-size:1.1rem;transition:color 0.3s;" onmouseover="this.style.color='#a8c499'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">𝓲𝓰</a>
+            <a href="#" aria-label="TikTok" style="color:rgba(255,255,255,0.4);font-size:1.1rem;transition:color 0.3s;" onmouseover="this.style.color='#a8c499'" onmouseout="this.style.color='rgba(255,255,255,0.4)'">𝐓𝐤</a>
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Footer navigation">
+          <h4>Pages</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <ul>
+            <li><a href="#">Mon–Fri: 7am – 9pm</a></li>
+            <li><a href="#">Sat: 8am – 10pm</a></li>
+            <li><a href="#">Sun: 9am – 8pm</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 MarD Brew Co. All rights reserved.</p>
+        <p>WEB 224 Midterm Project</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Page transition overlay -->
+
+  <!-- Mobile nav overlay -->
+
+  <!-- Mobile nav drawer -->
+
+  <!-- Floating Order Now -->
+  <a href="contact.html" class="float-order" aria-label="Order Now">
+    ☕ <span class="order-label">Order Now</span>
+  </a>
+
+  
+</body>
+</html>

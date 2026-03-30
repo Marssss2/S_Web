@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Write-Up | MarD Brew Co. | WEB 224</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;600&family=Cormorant+Garamond:wght@600&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 11pt;
+      line-height: 1.65;
+      color: #1a1a1a;
+      background: #fff;
+      padding: 2.5cm 2.5cm;
+      max-width: 21cm;
+      margin: 0 auto;
+    }
+    h1 { font-family: 'Cormorant Garamond', serif; font-size: 22pt; margin-bottom: 0.3rem; }
+    h2 {
+      font-size: 10.5pt; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.1em;
+      color: #6b8f5e; margin: 1.3rem 0 0.4rem;
+      border-bottom: 1.5px solid #eef3eb; padding-bottom: 0.25rem;
+    }
+    p { margin-bottom: 0.5rem; color: #2a2a2a; }
+    .header { border-bottom: 2px solid #6b8f5e; padding-bottom: 0.8rem; margin-bottom: 1rem; }
+    .meta { font-size: 9.5pt; color: #666; margin-top: 0.3rem; }
+    .subtitle { font-size: 10.5pt; color: #5a5a5a; margin-top: 0.2rem; }
+    ul { padding-left: 1.2rem; margin-bottom: 0.5rem; }
+    ul li { margin-bottom: 0.2rem; font-size: 10.5pt; }
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    code { font-family: 'Courier New', monospace; font-size: 10pt; background: #f4f4f4; padding: 0.1rem 0.3rem; border-radius: 3px; }
+    @media print { body { padding: 1.5cm 2cm; } }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>MarD Brew Co.</h1>
+    <p class="subtitle">Multi-Page Static Website — Structure &amp; Design Write-Up</p>
+    <p class="meta">WEB 224 (Web Programming) — Midterm Examination &nbsp;|&nbsp; Pampanga State University, CEA</p>
+    <p class="meta">Group Members: _________________________ &amp; _________________________</p>
+    <p class="meta">Website Title: MarD Brew Co. — Specialty Coffee Shop</p>
+  </div>
+
+  <h2>Project Overview</h2>
+  <p>
+    <strong>Theme:</strong> Small Business — Specialty Coffee Shop &nbsp;|&nbsp;
+    <strong>Pages:</strong> 5 &nbsp;|&nbsp;
+    <strong>Aesthetic:</strong> Light, Calming, Matcha Green &amp; White
+  </p>
+  <p>
+    MarD Brew Co. is a fictional specialty coffee shop website built to demonstrate
+    semantic HTML5 structuring, external CSS styling, responsive layout, and W3C-compliant
+    web development. The color direction chosen was <strong>light, calming matcha green and white</strong> —
+    using soft sage tones, warm cream backgrounds, and rounded cards to evoke a peaceful, welcoming atmosphere.
+    Real photography was sourced from Unsplash (free, license-free) and embedded via direct URL to enhance
+    visual appeal without requiring local image files.
+  </p>
+
+  <h2>Site Structure</h2>
+  <div class="two-col">
+    <ul>
+      <li><strong>index.html</strong> — Home: hero split layout, features, signature drinks, food preview</li>
+      <li><strong>about.html</strong> — Brand story, values, team photos</li>
+      <li><strong>menu.html</strong> — Drink image cards + 3 full pricing tables</li>
+    </ul>
+    <ul>
+      <li><strong>services.html</strong> — Service cards + rates table + CTA</li>
+      <li><strong>contact.html</strong> — Full inquiry form with all required input types</li>
+      <li><strong>css/style.css</strong> — Single shared external stylesheet</li>
+    </ul>
+  </div>
+
+  <h2>HTML Design Choices</h2>
+  <p>
+    All pages use semantic HTML5 elements: <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>,
+    <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>,
+    <code>&lt;aside&gt;</code>, and <code>&lt;footer&gt;</code>. ARIA labels and roles are applied
+    throughout for accessibility. A shared sticky navigation bar links all five pages with an active
+    state indicator per page. The Contact page includes a full form with: text inputs, email, tel,
+    <code>&lt;select&gt;</code> dropdowns, radio buttons (inquiry type), checkboxes (preferences),
+    and a textarea — all properly labeled with <code>&lt;label for&gt;</code> and wrapped in
+    <code>&lt;fieldset&gt;</code> with legends for screen reader support. Menu and Services pages
+    use HTML <code>&lt;table&gt;</code> elements with <code>&lt;thead&gt;</code>, <code>&lt;tbody&gt;</code>,
+    and <code>scope</code> attributes. Images are embedded using the <code>&lt;img&gt;</code>
+    element with descriptive <code>alt</code> text on every image for accessibility compliance.
+    Inner pages include a full-bleed background image in the page hero with an overlay.
+  </p>
+
+  <h2>CSS Design Choices</h2>
+  <p>
+    All styling is handled by one external stylesheet (<code>css/style.css</code>) linked to every page.
+    CSS Custom Properties (<code>:root</code> variables) define the color system, typography, shadows,
+    border radii, and transitions — ensuring consistency and easy theming. Layout uses
+    <strong>CSS Flexbox</strong> (navbar, hero CTA, stats row, contact items, card footers) and
+    <strong>CSS Grid</strong> (hero split, feature grids, menu cards, about section, contact two-column,
+    footer). Responsive design uses <strong>media queries</strong> at 960px, 768px, and 540px — 
+    collapsing grid layouts, hiding desktop navigation, and stacking columns on mobile.
+    CSS animations include: <code>slideDown</code> for the navbar, <code>fadeUp</code> for page content
+    entry, and hover transitions with <code>translateY</code>, <code>box-shadow</code> changes, and
+    <code>transform: scale()</code> on menu card images. A <code>::before</code> pseudo-element
+    sliding underline effect is applied to navigation links and service cards for micro-interaction polish.
+    W3C standards followed: meaningful class names, proper specificity, comments, consistent indentation,
+    and <code>alt</code> text on all images.
+  </p>
+
+  <h2>Media &amp; Tools</h2>
+  <p>
+    Built with plain HTML5 and CSS3 — no JavaScript frameworks or CSS libraries. Google Fonts:
+    <em>Cormorant Garamond</em> (display headings) and <em>DM Sans</em> (body text).
+    All photography sourced from <strong>Unsplash</strong> (free commercial use license).
+    Images are embedded via direct URL with width and quality parameters for optimized loading.
+    The site is fully functional as a static local project opened in any modern browser.
+  </p>
+
+</body>
+</html>
